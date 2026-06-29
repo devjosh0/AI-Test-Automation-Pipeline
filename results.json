@@ -1,0 +1,189 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--workers=1",
+      "--project=chromium",
+      "--headed"
+    ],
+    "configFile": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\playwright.config.ts",
+    "rootDir": "C:/Users/HusseinAmadu/OneDrive - AmaliTech gGmbH/Desktop/ai-flow/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/HusseinAmadu/OneDrive - AmaliTech gGmbH/Desktop/ai-flow/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/HusseinAmadu/OneDrive - AmaliTech gGmbH/Desktop/ai-flow/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/HusseinAmadu/OneDrive - AmaliTech gGmbH/Desktop/ai-flow/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/HusseinAmadu/OneDrive - AmaliTech gGmbH/Desktop/ai-flow/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/HusseinAmadu/OneDrive - AmaliTech gGmbH/Desktop/ai-flow/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/HusseinAmadu/OneDrive - AmaliTech gGmbH/Desktop/ai-flow/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "loginvalidemail_qd1.spec.ts",
+      "file": "loginvalidemail_qd1.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Successful login",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2466,
+                  "error": {
+                    "message": "Error: locator.fill: Unexpected token \"#\" while parsing css selector \"##password\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for ##password\u001b[22m\n",
+                    "stack": "Error: locator.fill: Unexpected token \"#\" while parsing css selector \"##password\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for ##password\u001b[22m\n\n    at LoginValidEmail_QD1Page.enterPassword (C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\pages\\LoginValidEmail_QD1Page.ts:27:34)\n    at C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\tests\\loginvalidemail_qd1.spec.ts:8:21",
+                    "location": {
+                      "file": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\pages\\LoginValidEmail_QD1Page.ts",
+                      "column": 34,
+                      "line": 27
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginValidEmail_QD1Page.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36masync\u001b[39m enterPassword(password\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[36masync\u001b[39m clickLogin() {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\pages\\LoginValidEmail_QD1Page.ts",
+                        "column": 34,
+                        "line": 27
+                      },
+                      "message": "Error: locator.fill: Unexpected token \"#\" while parsing css selector \"##password\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for ##password\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\LoginValidEmail_QD1Page.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36masync\u001b[39m enterPassword(password\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[36masync\u001b[39m clickLogin() {\u001b[0m\n\u001b[2m    at LoginValidEmail_QD1Page.enterPassword (C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\pages\\LoginValidEmail_QD1Page.ts:27:34)\u001b[22m\n\u001b[2m    at C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\tests\\loginvalidemail_qd1.spec.ts:8:21\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-29T09:50:08.967Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\test-results\\loginvalidemail_qd1-Successful-login-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\test-results\\loginvalidemail_qd1-Successful-login-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\pages\\LoginValidEmail_QD1Page.ts",
+                    "column": 34,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "544bfaa3da0beddac500-3c78af25490b36220f56",
+          "file": "loginvalidemail_qd1.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-29T09:50:08.410Z",
+    "duration": 4031.5860000000002,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
