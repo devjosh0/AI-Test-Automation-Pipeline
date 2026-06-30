@@ -147,7 +147,8 @@ function generateUniversalFixes(failed: FailedTest, specContent: string): { old:
     "toBeFalsy": "toBeTruthy",
     "toBeDefined": "toBeUndefined",
     "toBeUndefined": "toBeDefined",
-    "toBeNull": "toBeDefined"
+    "toBeNull": "toBeDefined",
+    "toContainText": "not.toContainText"
     
   };
 
