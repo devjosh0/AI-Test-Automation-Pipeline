@@ -5,8 +5,8 @@
       "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\node_modules\\@playwright\\test\\cli.js",
       "test",
       "--workers=1",
-      "--headed",
-      "--project=chromium"
+      "--project=chromium",
+      "--headed"
     ],
     "configFile": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\playwright.config.ts",
     "rootDir": "C:/Users/HusseinAmadu/OneDrive - AmaliTech gGmbH/Desktop/ai-flow/tests",
@@ -100,96 +100,79 @@
   },
   "suites": [
     {
-      "title": "loginvalidemail_qd1.spec.ts",
-      "file": "loginvalidemail_qd1.spec.ts",
+      "title": "testfile.spec.ts",
+      "file": "testfile.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "QD-1: Login with valid email and password",
-          "file": "loginvalidemail_qd1.spec.ts",
-          "line": 4,
-          "column": 6,
-          "specs": [
+          "title": "example test",
+          "ok": false,
+          "tags": [],
+          "tests": [
             {
-              "title": "Scenario 1: Successful login",
-              "ok": false,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30113,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 1999,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Products\u001b[7m!\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"Products\"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Products\u001b[7m!\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"Products\"\u001b[39m\n    at C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\tests\\loginvalidemail_qd1.spec.ts:24:59",
-                        "location": {
-                          "file": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\tests\\loginvalidemail_qd1.spec.ts",
-                          "column": 59,
-                          "line": 24
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[90m// And I should see \"Products\" as the header\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgetProductsHeaderText())\u001b[33m.\u001b[39mtoBe(\u001b[32m'Products!'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\tests\\testfile.spec.ts",
+                        "column": 23,
+                        "line": 9
                       },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\tests\\loginvalidemail_qd1.spec.ts",
-                            "column": 59,
-                            "line": 24
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Products\u001b[7m!\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"Products\"\u001b[39m\n\n\u001b[0m \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[90m// And I should see \"Products\" as the header\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgetProductsHeaderText())\u001b[33m.\u001b[39mtoBe(\u001b[32m'Products!'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\tests\\loginvalidemail_qd1.spec.ts:24:59\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-30T14:27:03.889Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\test-results\\loginvalidemail_qd1-QD-1-L-c05c6-Scenario-1-Successful-login-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\test-results\\loginvalidemail_qd1-QD-1-L-c05c6-Scenario-1-Successful-login-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\tests\\loginvalidemail_qd1.spec.ts",
-                        "column": 59,
-                        "line": 24
-                      }
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m   \u001b[36mconst\u001b[39m loginButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#loginbutton\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[90m//the correct id is #login-button\u001b[39m\n \u001b[90m  8 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m usernameInput\u001b[33m.\u001b[39mfill(\u001b[32m\"standard_user\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m passwordInput\u001b[33m.\u001b[39mfill(\u001b[32m\"secret_sauce\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m loginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[33m;\u001b[39m \u001b[0m\n\u001b[2m    at C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\tests\\testfile.spec.ts:9:23\u001b[22m"
                     }
                   ],
-                  "status": "unexpected"
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-06T09:27:03.131Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\test-results\\testfile-example-test-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\HusseinAmadu\\OneDrive - AmaliTech gGmbH\\Desktop\\ai-flow\\test-results\\testfile-example-test-chromium\\trace.zip"
+                    }
+                  ]
                 }
               ],
-              "id": "544bfaa3da0beddac500-7b24142073f6f39ec036",
-              "file": "loginvalidemail_qd1.spec.ts",
-              "line": 5,
-              "column": 7
+              "status": "unexpected"
             }
-          ]
+          ],
+          "id": "afe814a7ba67be92d8a9-283120985a8e5e168f4d",
+          "file": "testfile.spec.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-30T14:27:03.469Z",
-    "duration": 3015.6749999999997,
+    "startTime": "2026-07-06T09:27:02.583Z",
+    "duration": 31377.445,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,
